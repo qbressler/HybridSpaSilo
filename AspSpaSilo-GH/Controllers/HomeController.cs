@@ -26,5 +26,10 @@ namespace AspSpaSilo_GH.Controllers
 
             return View();
         }
+
+        public ActionResult Customer()
+        {
+            return View();
+        }
     }
 }

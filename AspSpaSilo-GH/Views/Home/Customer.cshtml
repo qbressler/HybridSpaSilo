@@ -1,0 +1,18 @@
+﻿@{ 
+    ViewBag.InitialModule = "customer";
+}
+
+<script src="~/App/Customer/app.js"></script>
+<script src="~/App/Customer/ViewModels/rootViewModel.js"></script>
+<script src="~/App/Customer/ViewModels/customerListViewModel.js"></script>
+
+<script type="text/javascipt">
+    angular.bootstrap(document.getElementById('customer'), ['customer'])
+</script>
+
+<div id="customer" ng-controller="rootViewModel">
+    <h2>{{ pageTitle }}</h2>
+    <a href="#/customerList" class="btn btn-primary">Customer List</a>
+    <a href="#/customerAnotherLink" class="btn btn-primary">Another Customer Link</a>
+    <div ng-view style="margin-top: 50px;"></div>
+</div>
